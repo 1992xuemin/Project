@@ -4,9 +4,12 @@
 public class Weapon {
     private String name;
     private int hurt;
-    private static final Weapon NULL_WEAPON=new Weapon("",0){
-
+    public static final Weapon NULL_WEAPON=new Weapon("",0){
+        public String getInfo(){
+            return "";
+        }
     };
+
     public String getName() {
         return name;
     }
@@ -22,7 +25,7 @@ public class Weapon {
 
     }
 
-    public String getInfor(){
+    public String getInfo(){
         return "用"+this.name;
     }
 }

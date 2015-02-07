@@ -24,7 +24,7 @@ public class SoldierTest {
         Person ordinary_people_lisi = new Person("lisi", 10, 3);
         String detail = solider_zhangsan.fight(ordinary_people_lisi);
         assertThat(ordinary_people_lisi.getBlood()).isEqualTo(6);
-        assertThat(detail).isEqualTo("战士zhangsan用null攻击了普通人lisi," +
+        assertThat(detail).isEqualTo("战士zhangsan攻击了普通人lisi," +
                 "lisi受到了4点伤害，lisi剩余生命：6");
     }
 }
